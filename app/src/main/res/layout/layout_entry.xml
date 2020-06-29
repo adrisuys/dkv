@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/rectangle_border">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:weightSum="12"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/entry_date"
+            android:layout_gravity="center_vertical"
+            android:text="1/6/2020"
+            android:layout_width="0dp"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/entry_liters"
+            android:layout_gravity="center_vertical"
+            android:text="18 L"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/entry_price"
+            android:layout_gravity="center_vertical"
+            android:text="55 €"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:background="@drawable/bg"
+        android:adjustViewBounds="false"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="50dp">
+
+        <EditText
+            android:id="@+id/date_text"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Date"
+            android:focusable="false"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="12"
+            android:layout_marginBottom="20dp">
+
+            <EditText
+                android:id="@+id/liters_text"
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_height="60dp"
+                android:hint="Liters"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="60dp"
+                android:text="Liters"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="12">
+
+            <EditText
+                android:id="@+id/price_text"
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Price"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="60dp"
+                android:text="Euros"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/add_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:onClick="addEntry"/>
+
+    </LinearLayout>
+
+</LinearLayout>

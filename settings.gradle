@@ -1,0 +1,2 @@
+rootProject.name='DKV'
+include ':app'
